@@ -1,8 +1,7 @@
 ## Bootsnav - Multi Purpose Header RTL version - Experimental
 ## followings from original project
-Bootsnav is a multi purpose header based with Bootstrap, you can build any header style with bootsnav only with a few minutes.
 
-[DEMO & Documentation](http://bootsnav.danurstrap.com/)
+Bootsnav.rtl originally from https://github.com/adamnurdin01/bootsnav
 
 ## File Structure
 CSS files stored in folder 'CSS' and 'skins' (color skins). However, you'd just need to edit the overwrite.css file. It contains the styling elements for all header menu. 
@@ -10,15 +9,19 @@ CSS files stored in folder 'CSS' and 'skins' (color skins). However, you'd just 
 ```
 bootsnav/
 ├── css/
-│   ├── bootsnav.css
+│   ├── bootsnav.rtl.css
 │   ├── style.css
+│   ├── bootstrap.rtl.min.css
 └── js/
-    └── bootsnav.js
+    ├──bootstrap.rtl.min.js
+    └── bootsnav.rtl.js
 ```
 
 ## Credit
 Framework Based
-- Bootstrap V.3 - http://getbootstrap.com/
+- Bootstrap v3.3.5 (http://getbootstrap.com)
+ Copyleft 2011-2015 Twitter, Inc.
+ Edit for RTL by Mahdi Gherekhloo (http://gherekhloo.ir)(mailto:m.gherekhloo@gmail.com)
 
 Font
 - Open Sans - https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
@@ -28,18 +31,6 @@ Icons
 
 Javascript
 - jQuery  - https://code.jquery.com/jquery/
-- Bootstrap  - http://getbootstrap.com/
-- IE  - https://github.com/twbs/bootstrap/tree/master/docs/assets/js
 
 CSS
 -  Animate - https://daneden.github.io/animate.css/
-
-## Change Log
-
-### v.1.1 - 2016-06-11
-- Fixed Navbar sticky
-- Fixed Search mobile device
-- Fixed Active navigation on brand center
-
-### v.1.2 - 2016-10-19
-- Responsive 991px
