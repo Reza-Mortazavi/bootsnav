@@ -1,4 +1,5 @@
-## Bootsnav - Multi Purpose Header 
+## Bootsnav - Multi Purpose Header RTL version - Experimental
+## folowwing from original project
 Bootsnav is a multi purpose header based with Bootstrap, you can build any header style with bootsnav only with a few minutes.
 
 [DEMO & Documentation](http://bootsnav.danurstrap.com/)
