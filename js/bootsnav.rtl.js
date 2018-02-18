@@ -1,5 +1,7 @@
 // ------------------------------------------------------------------------------ //
 //
+// Original:
+//
 // Template name : Bootsnav - Multi Purpose Header
 // Categorie : Bootstrap Menu in CSS
 // Author : adamnurdin01
@@ -7,6 +9,7 @@
 // Created : 2016-06-02
 // Last update : 2016-10-19
 //
+// Forked by reza Mortazavi - yashar.mortazavi@gmail.com
 // ------------------------------------------------------------------------------ //
 
 (function ($) {
@@ -69,17 +72,17 @@
                 //Generate HTML for first list
                 createHTML(firstList);
                 $postsList.html(ListHTML);
-                index.find("ul.nav").first().addClass("navbar-left");
+                index.find("ul.nav").first().addClass("navbar-right");
                 
                 //Generate HTML for second list
                 createHTML(secondList);
                 //Create new list after original one
                 $postsList.after('<ul class="nav navbar-nav"></ul>').next().html(ListHTML);
-                index.find("ul.nav").last().addClass("navbar-right");
+                index.find("ul.nav").last().addClass("navbar-left");
                 
                 //Wrap navigation menu
-                index.find("ul.nav.navbar-left").wrap("<div class='col-half left'></div>");
                 index.find("ul.nav.navbar-right").wrap("<div class='col-half right'></div>");
+                index.find("ul.nav.navbar-left").wrap("<div class='col-half left'></div>");
                 
                 //Selection Class
                 index.find('ul.navbar-nav > li').each(function(){ 
@@ -90,7 +93,7 @@
                 });
 				
 				var getName = $(".storage-name").html();
-				if( !getName == ""  ){
+				if( !getName === ""  ){
 					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
 				}		
             } 
@@ -134,14 +137,14 @@
             if( getNav.hasClass("navbar-mobile")){
                 // Add Class to body
                 $('.navbar-collapse').on('shown.bs.collapse', function() {
-                    $("body").addClass("side-right");
+                    $("body").addClass("side-left");
                 });
                 $('.navbar-collapse').on('hide.bs.collapse', function() {
-                    $("body").removeClass("side-right");
+                    $("body").removeClass("side-left");
                 });
                 
                 $(window).on("resize", function(){
-                    $("body").removeClass("side-right");
+                    $("body").removeClass("side-left");
                 });
             }
             
